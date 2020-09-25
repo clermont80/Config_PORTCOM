@@ -1,0 +1,25 @@
+//---------------------------------------------------------------------------
+
+#ifndef rs232H
+#define rs232H
+
+#include <Windows.h>
+class rs232
+{
+private:
+   char* ptrbuffer;
+   HANDLE hcom;
+
+public:
+   void Ouvrirport();
+   bool ecrireport1(char* path);  //createfile a besoin du chemin du fichier
+   bool ecrrieport2(char* path,int n);
+   void lireport();
+
+
+
+
+
+
+};
+#endif
